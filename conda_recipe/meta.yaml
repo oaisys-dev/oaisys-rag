@@ -1,0 +1,48 @@
+package:
+  name: oaisys-rag
+  version: "0.1.0"
+
+source:
+  path: ..
+
+
+requirements:
+  build:
+    - python
+    - setuptools
+    - langchain-community
+    - boto3==1.34.37
+    - numpy
+    - langchain
+    - langchainhub
+    - langchain-openai
+    - chromadb
+    - bs4
+    - tiktoken
+    - openai
+    - pytest
+  run:
+    - python
+    - setuptools
+    - langchain-community
+    - boto3==1.34.37
+    - numpy
+    - langchain
+    - langchainhub
+    - langchain-openai
+    - chromadb
+    - bs4
+    - tiktoken
+    - openai
+
+about:
+  home: https://github.com/oaisys-dev/oaisys-rag/
+  license: MIT
+  license_file: LICENSE
+  summary: "A brief description of your library"
+  description: |
+    A longer description of your library that can span multiple lines.
+
+extra:
+  recipe-maintainers:
+    - sergey-kurshev
