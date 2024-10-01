@@ -28,7 +28,8 @@ def test_endpoint():
     assert result.output
 
 def test_endpoint_with_docs():
-    urls = ["https://meduza.io/rss/en/all"]
+    # urls = ["https://meduza.io/rss/en/all"]
+    urls = ["https://www.bbc.co.uk/news"]
 
     loader = DocumentLoader(config)
 
@@ -37,7 +38,8 @@ def test_endpoint_with_docs():
     )
 
     ep = Endpoint(config)
-    query = "What is the latest in Ukraine?"
+    # query = "What is the latest in Ukraine?"
+    query = "What are the headlines of the politics news? Give a list of topics each on a separate line"
     result = ep.get_response_with_docs(query, passthrough_retriver)
     assert result.query == query
     assert len(result.documents) > 0

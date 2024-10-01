@@ -9,3 +9,4 @@ bs4
 tiktoken
 openai
 pytest
+gradio
